@@ -1,0 +1,343 @@
+body {
+	overflow-y: auto;
+}
+
+.main {
+	margin: 0px -10px 0px -10px;
+	width: 1367px;
+	background-color: lightblue;
+	position: absolute;
+}
+
+.header {
+	width: 1375px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+
+.header_1 {
+	width: 1375px;
+	height: 50px;
+	background-color: seashell;
+	position: relative;
+}
+
+
+/*头部导航条样式*/
+
+.header_logo {
+	margin: 5px 112px 5px 50px;
+	width: 140px;
+	height: 50px;
+	float: left;
+}
+
+.header_input {
+	margin: 7px 50px 7px 33px;
+	width: 350px;
+	height: 30px;
+	background-color: white;
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	padding-right: 50px;
+}
+
+.header_search {
+	position: absolute;
+	top: 8px;
+	left: 700px;
+	cursor: pointer;
+}
+
+.header_ul {
+	margin: 0px;
+	padding: 0px 0px 0px 53px;
+	font-family: "宋体";
+	font-size: 20px;
+	list-style-type: none;
+	overflow-y: hidden;
+}
+
+.header_ul_li {
+	padding-left: 20px;
+	float: left;
+}
+
+.header_ul_li_2 {
+	padding-left: 5px;
+	position: relative;
+	top: 12px;
+}
+
+.header_ul_li_3 {
+	padding-left: 50px;
+	position: relative;
+	top: 12px;
+}
+
+.header_a {
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+
+.header_a1 {
+	color: gray;
+	display: block;
+	text-decoration: none;
+	cursor: no-drop;
+}
+
+.header_a img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+.header_a1 img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+.header_a:hover {
+	color: seashell;
+	background: #ff8140;
+}
+
+.header_ul_2 {
+	font-family: "宋体";
+	font-size: 20px;
+	list-style-type: none;
+	position: absolute;
+	left: 908px;
+	display: none;
+}
+
+.header_ul_2_li {
+	float: none;
+	line-height: 30px;
+	text-align: left;
+	background-color: seashell;
+}
+
+.header_ul_li:hover ul {
+	display: block;
+}
+
+
+/*头部导航条样式*/
+
+.userf_data {
+	margin: 50px 0px 0px 300px;
+	width: 750px;
+	height: 150px;
+	background-color: lightsteelblue;
+}
+
+.userf_data_but {
+	width: 250px;
+	height: 40px;
+	position: relative;
+	left: 300px;
+	position: relative;
+	top: 50px;
+}
+
+#userf_data_but1 {
+	border-width: 0px;
+	width: 100px;
+	height: 30px;
+	cursor: no-drop;
+	background-color: darkgray;
+}
+
+.userf_data_head {
+	width: 750px;
+	height: 60px;
+	position: relative;
+	top: 30px;
+}
+
+#userf_data_head1 {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: 270px;
+}
+
+#userf_data_name1 {
+	cursor: default;
+	position: relative;
+	top: -5px;
+	left: 300px;
+}
+
+.userf_menu {
+	margin: 0px 0px 0px 300px;
+	width: 750px;
+	height: 50px;
+	background-color: silver;
+}
+
+#userf_menu1,
+#userf_menu2,
+#userf_menu3,
+#userf_menu4,
+#userf_menu5 {
+	margin-left: 40px;
+	width: 110px;
+	height: 30px;
+	color: gray;
+	text-decoration: none;
+	position: relative;
+	top: 15px;
+}
+
+#userf_menu1 {
+	color: black;
+	margin-left: 65px;
+}
+
+#userf_menu2,
+#userf_menu3,
+#userf_menu4,
+#userf_menu5 {
+	color: gray;
+}
+
+.userf_body {
+	margin: 0px 0px 50px 300px;
+	width: 750px;
+	background-color: lightsteelblue;
+}
+
+.userf_top {
+	width: 750px;
+	height: 40px;
+	background-color: darkgray;
+}
+
+.userf_top_img {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.userf_top_img1 {
+	width: 40px;
+	height: 40px;
+}
+
+.userf_top_a1 {
+	float: left;
+	text-decoration:none;
+	color:black;
+	position: relative;
+	top: 20px;
+}
+.userf_top_a1:hover{
+	color:orange;
+}
+.userf_top_span {
+	float: right;
+	position: relative;
+	top: 20px;
+	cursor: default;
+}
+
+.userf_text {
+	margin: 0px 0px 0px 50px;
+	width: 650px;
+	word-break: break-all;
+	cursor: default;
+}
+
+.userf_photo {
+	margin: 0px 0px 0px 50px;
+	width: 660px;
+	word-break: break-all;
+}
+
+.userf_photo1 {
+	width: 220px;
+	height: 220px;
+	float: left;
+}
+
+.userf_button {
+	margin: 0px 0px 0px 0px;
+	padding-top: 10px;
+	width: 750px;
+	height: 40px;
+	clear: both;
+}
+.userf_button_4{
+	margin: 0px 0px 0px 40px;
+	border-width: 0px;
+	font-size: 17px;
+	width: 200px;
+	height: 30px;
+	background-color: darkgray;
+	cursor: no-drop;
+}
+.userf_button_1,
+.userf_button_2,
+.userf_button_3 {
+	margin: 0px 0px 0px 40px;
+	border-width: 0px;
+	font-size: 17px;
+	width: 200px;
+	height: 30px;
+	background-color: darkgray;
+	cursor: pointer;
+}
+.userf_button_1:hover {
+	color: seashell;
+	background-color: gray;
+}
+.userf_button_2:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.userf_button_3:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.userf_body2 {
+	margin: 0px 0px 50px 300px;
+	width: 750px;
+	height: auto;
+	background-color: lightsteelblue;
+	display: none;
+}
+
+.userf_body2_p {
+	width: 750px;
+	text-align: center;
+	line-height: 40px;
+	word-break: break-all;
+}
+
+.userf_body2_p_a {
+	width: 250px;
+	color: black;
+	text-decoration: none;
+	font-size: 17px;
+	float: left;
+}
+
+.userf_body2_p_a:hover {
+	color: orangered;
+}
+.userf_body2_p2{
+	margin: 0px;
+	clear: both;
+}

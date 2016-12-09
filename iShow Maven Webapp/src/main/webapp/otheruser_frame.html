@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-其他用户</title>
+		<link rel="stylesheet" href="css/otheruser.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body onload=mainOtherUserFunc()>
+		<div class="main" id="otheru_main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search" />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="otheruser_frame.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="otheruser_frame.html" class="header_a1" disabled="true"><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="#" class="header_a" id="header_a12"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="otheru_nav">
+				<a href="#" id="otheru_nav_a1"></a>
+			</div>
+			<div class="otheru_data">
+				<div class="otheru_data_head">
+					<img src="img/user.ico" id="otheru_data_head1" />
+					<span id="otheru_data_name1"></span>
+				</div>
+				<div class="otheru_data_but">
+					<input type="button" value="+&nbsp;关注" id="otheru_data_but1" onclick="addUserCollection()"/>
+				</div>
+			</div>
+			<div class="otheru_body" id="otheru_body1">
+				
+			</div>
+		</div>
+	</body>
+
+</html>

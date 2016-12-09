@@ -1,0 +1,237 @@
+body {
+	overflow-y: auto;
+}
+
+.main {
+	margin: 0px -10px 0px -10px;
+	width: 1367px;
+	background-color: lightblue;
+	position: absolute;
+}
+
+.header {
+	width: 1375px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+
+.header_1 {
+	width: 1375px;
+	height: 50px;
+	background-color: seashell;
+	position: relative;
+}
+
+
+/*头部导航条样式*/
+
+.header_logo {
+	margin: 5px 112px 5px 50px;
+	width: 140px;
+	height: 50px;
+	float: left;
+}
+
+.header_input {
+	margin: 7px 50px 7px 33px;
+	width: 350px;
+	height: 30px;
+	background-color: white;
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	padding-right: 50px;
+}
+
+.header_search {
+	position: absolute;
+	top: 8px;
+	left: 700px;
+	cursor: pointer;
+}
+
+.header_ul {
+	margin: 0px;
+	padding: 0px 0px 0px 53px;
+	font-family: "宋体";
+	font-size: 20px;
+	list-style-type: none;
+	overflow-y: hidden;
+}
+
+.header_ul_li {
+	padding-left: 20px;
+	float: left;
+}
+
+.header_ul_li_2 {
+	padding-left: 5px;
+	position: relative;
+	top: 12px;
+}
+
+.header_ul_li_3 {
+	padding-left: 50px;
+	position: relative;
+	top: 12px;
+}
+
+.header_a {
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+
+.header_a1 {
+	color: gray;
+	display: block;
+	text-decoration: none;
+	cursor: no-drop;
+}
+
+.header_a img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+.header_a1 img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+.header_a:hover {
+	color: seashell;
+	background: #ff8140;
+}
+
+.header_ul_2 {
+	font-family: "宋体";
+	font-size: 20px;
+	list-style-type: none;
+	position: absolute;
+	left: 908px;
+	display: none;
+}
+
+.header_ul_2_li {
+	float: none;
+	line-height: 30px;
+	text-align: left;
+	background-color: seashell;
+}
+
+.header_ul_li:hover ul {
+	display: block;
+}
+
+
+/*头部导航条样式*/
+#search_nav {
+	margin: 50px 0px 0px 0px;
+	width: 1350px;
+	height: 40px;
+}
+
+#search_nav_a1 {
+	margin: 0px 50px 0px 0px;
+	height: 40px;
+	float: right;
+	color: black;
+}
+.search_body{
+	margin: 0px 0px 10px 300px;
+	width: 750px;
+	height: auto;
+	background-color: lightsteelblue;
+}
+.search_top {
+	width: 750px;
+	height: 40px;
+	background-color: darkgray;
+}
+
+.search_top_img {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.search_top_img1 {
+	width: 40px;
+	height: 40px;
+}
+
+.search_top_a1 {
+	text-decoration: none;
+	color: black;
+	float: left;
+	position: relative;
+	top: 20px;
+}
+
+.search_top_span {
+	float: right;
+	position: relative;
+	top: 20px;
+	cursor: default;
+}
+
+.search_text {
+	margin: 0px 0px 0px 50px;
+	width: 650px;
+	word-break: break-all;
+	cursor: default;
+}
+
+.search_photo {
+	margin: 0px 0px 0px 50px;
+	width: 660px;
+	word-break: break-all;
+}
+
+.search_photo1 {
+	width: 220px;
+	height: 220px;
+	float: left;
+}
+
+.search_button {
+	margin: 0px 0px 0px 0px;
+	padding-top: 10px;
+	width: 750px;
+	height: 40px;
+	clear: both;
+}
+
+.search_button_1,
+.search_button_2,
+.search_button_3 {
+	margin: 0px 0px 0px 40px;
+	border-width: 0px;
+	font-size: 17px;
+	width: 200px;
+	height: 30px;
+	background-color: darkgray;
+	cursor: pointer;
+}
+
+.search_button_1:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.search_button_2:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.search_button_3:hover {
+	color: seashell;
+	background-color: gray;
+}

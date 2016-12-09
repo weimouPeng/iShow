@@ -1,0 +1,301 @@
+body {
+	overflow-y: auto;
+}
+
+.main {
+	margin: 0px -10px 0px -10px;
+	width: 1367px;
+	background-color: lightblue;
+	position: absolute;
+}
+
+.header {
+	width: 1375px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+}
+
+.header_1 {
+	width: 1375px;
+	height: 50px;
+	background-color: seashell;
+	position: relative;
+}
+
+
+/*头部导航条样式*/
+
+.header_logo {
+	margin: 5px 112px 5px 50px;
+	width: 140px;
+	height: 50px;
+	float: left;
+}
+
+.header_input {
+	margin: 7px 50px 7px 33px;
+	width: 350px;
+	height: 30px;
+	background-color: white;
+	float: left;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	padding-right: 50px;
+}
+
+.header_search {
+	position: absolute;
+	top: 8px;
+	left: 700px;
+	cursor: pointer;
+}
+
+.header_ul {
+	margin: 0px;
+	padding: 0px 0px 0px 53px;
+	font-family: "宋体";
+	font-size: 20px;
+	list-style-type: none;
+	overflow-y: hidden;
+}
+
+.header_ul_li {
+	padding-left: 20px;
+	float: left;
+}
+
+.header_ul_li_2 {
+	padding-left: 5px;
+	position: relative;
+	top: 12px;
+}
+
+.header_ul_li_3 {
+	padding-left: 50px;
+	position: relative;
+	top: 12px;
+}
+
+.header_a {
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+
+.header_a1 {
+	color: gray;
+	display: block;
+	text-decoration: none;
+	cursor: no-drop;
+}
+
+.header_a img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+.header_a1 img {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+.header_a:hover {
+	color: seashell;
+	background: #ff8140;
+}
+
+.header_ul_2 {
+	font-family: "宋体";
+	font-size: 20px;
+	list-style-type: none;
+	position: absolute;
+	left: 908px;
+	display: none;
+}
+
+.header_ul_2_li {
+	float: none;
+	line-height: 30px;
+	text-align: left;
+	background-color: seashell;
+}
+
+.header_ul_li:hover ul {
+	display: block;
+}
+
+
+/*头部导航条样式*/
+
+.otheru_nav {
+	margin: 50px 0px 0px 0px;
+	width: 1350px;
+	height: 40px;
+}
+
+#otheru_nav_a1 {
+	height: 40px;
+	float: right;
+	color: black;
+	position: relative;
+	right: 50px;
+}
+
+#otheru_nav_a1:hover {
+	color: orangered;
+}
+
+.otheru_data {
+	margin: 0px 0px 50px 300px;
+	width: 750px;
+	height: 150px;
+	background-color: lightsteelblue;
+}
+
+.otheru_data_but {
+	width: 250px;
+	height: 40px;
+	position: relative;
+	left: 300px;
+	position: relative;
+	top: 50px;
+}
+
+#otheru_data_but1 {
+	border-width: 0px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	background-color: darkgray;
+}
+#otheru_data_but2 {
+	border-width: 0px;
+	width: 100px;
+	height: 30px;
+	cursor: no-drop;
+	background-color: darkgray;
+}
+#otheru_data_but1:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.otheru_data_head {
+	width: 750px;
+	height: 60px;
+	position: relative;
+	top: 30px;
+}
+
+#otheru_data_head1 {
+	width: 60px;
+	height: 60px;
+	position: relative;
+	left: 270px;
+}
+
+#otheru_data_name1 {
+	cursor: default;
+	position: relative;
+	top: -5px;
+	left: 300px;
+}
+
+.otheru_body {
+	margin: 0px 0px 50px 300px;
+	width: 750px;
+	background-color: lightsteelblue;
+}
+
+.otheru_top {
+	width: 750px;
+	height: 40px;
+	background-color: darkgray;
+}
+
+.otheru_top_img {
+	width: 40px;
+	height: 40px;
+	float: left;
+}
+
+.otheru_top_img1 {
+	width: 40px;
+	height: 40px;
+}
+
+.otheru_top_a1 {
+	float: left;
+	position: relative;
+	text-decoration:none;
+	color:black;
+	top: 20px;
+	cursor:default;
+}
+
+.otheru_top_span {
+	float: right;
+	position: relative;
+	top: 20px;
+	cursor: default;
+}
+
+.otheru_text {
+	margin: 0px 0px 0px 50px;
+	width: 650px;
+	word-break: break-all;
+	cursor: default;
+}
+
+.otheru_photo {
+	margin: 0px 0px 0px 50px;
+	width: 660px;
+	word-break: break-all;
+}
+
+.otheru_photo1 {
+	width: 220px;
+	height: 220px;
+	float: left;
+}
+
+.otheru_button {
+	margin: 0px 0px 0px 0px;
+	padding-top: 10px;
+	width: 750px;
+	height: 40px;
+	clear: both;
+}
+
+.otheru_button_1,
+.otheru_button_2,
+.otheru_button_3 {
+	margin: 0px 0px 0px 40px;
+	border-width: 0px;
+	font-size: 17px;
+	width: 200px;
+	height: 30px;
+	background-color: darkgray;
+	cursor: pointer;
+}
+
+.otheru_button_1:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.otheru_button_2:hover {
+	color: seashell;
+	background-color: gray;
+}
+
+.otheru_button_3:hover {
+	color: seashell;
+	background-color: gray;
+}

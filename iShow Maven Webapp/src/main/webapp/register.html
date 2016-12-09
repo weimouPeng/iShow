@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-注册</title>
+		<link rel="stylesheet" href="css/register.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+	</head>
+
+	<body onload=mainRegister()>
+		<div class="main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search" />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="register.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="register.html" disabled="true" class="header_a1" ><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="#" class="header_a" id="header_a13"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="register_container">
+
+				<div class="pompt"><label for="mail1"><b>个人注册</b></label></div>
+				<div class="register_info">
+
+					<div>
+
+						<div class="form_div">
+							<label for="mail1"><i>*</i>&nbsp;邮箱:</label>
+							<input type="text" maxlength="30" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onpaste="return false" spellcheck="false" id="mail1" class="user_mail" placeholder="30个字符内" /><br />
+						</div>
+
+						<div class="form_div">
+							<label for="nickname1"><i>*</i>&nbsp;昵称: </label>
+							<input type="text" maxlength="10" spellcheck="false" id="nickname1" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onpaste="return false" class="user_name" placeholder="10个字符内" /><br />
+						</div>
+
+						<div class="form_div">
+							<label for="password1"><i>*</i>&nbsp;密码:</label>
+							<input type="password" maxlength="20" spellcheck="false" id="password1" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onpaste="return false" class="user_pwd" placeholder="20个字符内" /><br />
+						</div>
+
+						<div class="form_div">
+							<label for="password2" id="re_password"><i>*</i>&nbsp;确认密码:</label>
+							<input type="password" maxlength="20" spellcheck="false" id="password2" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onpaste="return false" class="user_confirm_pwd" placeholder="20个字符内" /><br />
+						</div>
+
+						<div class="submit_div">
+							<input type="button" class="user_submit" value="注册" onclick="check_register()" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

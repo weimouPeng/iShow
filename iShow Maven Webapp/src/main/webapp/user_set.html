@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/user_set.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body onload=mainUserSet()>
+		<div id="uset_main">
+			<div class="uset_form">
+				<div class="uset_nav">
+					<a href="#" id="uset_nav_a" onclick="usetBack()">返回</a>
+				</div>
+				<form method="post" onsubmit="return uSetSava()" action="picture/uploadPhoto.do" enctype="multipart/form-data">
+					<div class="uset_form1">
+						<input type="button" id="usetform_head" value="图片" onclick="usetpath.click()" />
+						<input type="file" name="files" id="usetpath" style="display:none" onchange="setUSerHead()" accept="image/*">
+						<div id="uset_form1_1">
+							<img src="" id="uset_form1_1_img" />
+						</div>
+					</div>
+					<div class="uset_form2">
+						<input type="text" spellcheck="false" id="uset_nickname_input" placeholder="输入昵称(10个字符内)" maxlength="10" />
+					</div>
+					<input type="submit" value="保存" id="uset_form_submit" />
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

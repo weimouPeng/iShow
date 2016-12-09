@@ -1,0 +1,71 @@
+.uset_form{
+	width: 240px;
+	height: 250px;
+	background-color: seashell;
+}
+.uset_nav{
+	width: 240px;
+	height: 30px;
+}
+#uset_nav_a{
+	font-size: 15px;
+	float: right;
+	position: relative;
+	top: 5px;
+	right: 5px;
+}
+.uset_form1{
+	width: 240px;
+	height: 110px;
+}
+#usetform_head{
+	border-width: 0px;
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	background-color: darkgray;
+	float: left;
+	position: relative;
+	top: 70px;
+	left: 160px;
+}
+#usetform_head:hover{
+	background-color: gray;
+	color: seashell;
+}
+#uset_form1_1{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: relative;
+	left: -10px;
+}
+#uset_form1_1_img{
+	width: 100px;
+	height: 100px;
+}
+.uset_form2{
+	width: 240px;
+	height: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+#uset_nickname_input{
+	width: 200px;
+	height: 20px;
+	font-size: 17px;
+}
+
+#uset_form_submit{
+	border-width: 0px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	background-color: darkgray;
+	position: relative;
+	left: 60px;
+}
+#uset_form_submit:hover{
+	background-color: gray;
+	color: seashell;
+}

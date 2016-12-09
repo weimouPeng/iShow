@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-查询</title>
+		<link rel="stylesheet" href="css/search.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	</head>
+
+	<body onload=mainSearch()>
+		<div class="main" id="search_main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search" />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="user_frame.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="user_frame.html" class="header_a1" disabled="true"><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="#" class="header_a" id="header_ul_li_4"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="search_nav">
+				<a href="#" id="search_nav_a1"></a>
+			</div>
+			<div id="search_allbody">
+				<div class="search_body" id="search_body1">
+				
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			if($(document).height() < "770") {
+				$("#search_main").css("height", "770px");
+			}
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

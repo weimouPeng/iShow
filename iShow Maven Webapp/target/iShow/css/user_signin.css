@@ -1,0 +1,88 @@
+#user_signin {
+	width: 240px;
+	height: 250px;
+	background-color: seashell;
+}
+
+.user_signin_nav {
+	width: 240px;
+	height: 50px;
+}
+
+#user_signin_nav_a1,
+#user_signin_nav_a2 {
+	padding: 15px 15px 0px 0px;
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+	float: right;
+}
+
+#user_signin_nav_a1:hover {
+	color: firebrick
+}
+
+#user_signin_nav_a2:hover {
+	color: firebrick
+}
+
+.user_signin_top {
+	width: 240px;
+	height: 100px;
+}
+
+.user_signin_top_img {
+	width: 50px;
+	height: 50px;
+	position: relative;
+	top: 30px;
+	left: 95px;
+}
+
+.user_signin_top_img1 {
+	width: 50px;
+	height: 50px;
+}
+
+.user_signin_center {
+	width: 240px;
+	height: 50px;
+	text-align: center;
+}
+
+#user_signin_center_id {
+	color: black;
+	text-decoration:none;
+}
+#user_signin_center_id:hover{
+	color: firebrick;
+}
+
+.user_signin_bottom {
+	width: 240px;
+	height: 50px;
+}
+
+.user_signin_bottom1 {
+	margin-left: 7px;
+	width: 70px;
+	height: 40px;
+	float: left;
+}
+
+
+#user_signin_bottom1_user_a,
+#user_signin_bottom1_ushare_a,
+#user_signin_bottom1_share_a {
+	color: black;
+	text-decoration: none;
+	cursor:default;
+}
+
+
+
+#user_signin_bottom1_user_a_s,
+#user_signin_bottom1_ushare_a_s,
+#user_signin_bottom1_share_a_s {
+	font-weight: bold;
+}

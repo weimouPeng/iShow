@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-登录</title>
+		<link rel="stylesheet" href="css/signIn.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#signin_top_user").click(function() {
+					$("#signin_top_user").css("color", "black");
+					$("#signin_top_a").css("color", "darkgray");
+					$("#signin_center_a").hide();
+					$("#signin_center_user").show();
+				});
+				$("#signin_top_a").click(function() {
+					$("#signin_top_user").css("color", "gray");
+					$("#signin_top_a").css("color", "black");
+					$("#signin_center_user").hide();
+					$("#signin_center_a").show();
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search " />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="signIn.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="signIn.html" class="header_a1" disabled="true"><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="signIn.html" class="header_a">登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="signin">
+				<div class="signin_top">
+					<a id="signin_top_user" title="切换至用户登录" href="#signin_user">用户登录</a>
+					<span>|</span>
+					<a id="signin_top_a" title="切换至管理员登录" href="#signin_admin">管理员登录</a>
+				</div>
+				<div id="signin_center_user">
+					<div class="signin_center_user_id">
+						<input type="text" id="signin_user" maxlength="30" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onpaste="return false" placeholder="请输入用户账号" />
+						<img src="img/user.ico" />
+					</div>
+					<div class="signin_center_user_p">
+						<input type="password" id="signin_user_pwd" maxlength="20" onpaste="return false" placeholder="请输入用户密码" /><br />
+						<img src="img/lock.ico" />
+					</div>
+					<div class="signin_center_user_c">
+						<input type="checkbox" id="ck1" checked="checked"/><label for="ck1" id="ck2">记住我</label>
+						&nbsp;&nbsp;
+						<a href="#">忘记密码？</a>
+					</div>
+					<input type="button" value="登&nbsp;&nbsp;录" class="signin_center_user_s " onclick="userLogin2()"/>
+					<div class="signin_center_user_r"><a class="signin_center_user_r_a" href="register.html">还没账号？立即注册</a></div>
+				</div>
+				<div id="signin_center_a">
+					<div class="signin_center_a_id">
+						<input type="text" id="signin_admin" maxlength="6" onkeyup="this.value=this.value.replace(/\D/g,'')" onpaste="return false"  placeholder="请输入管理员账号" />
+						<img src="img/user.ico" />
+					</div>
+					<div class="signin_center_a_p">
+						<input type="password" id="signin_admin_pwd" maxlength="20" onpaste="return false" placeholder="请输入管理员密码" /><br />
+						<img src="img/lock.ico" />
+					</div>
+					<div class="signin_center_a_c">
+						<input type="checkbox" id="ck1" disabled="disabled" style="cursor: no-drop;"/><label for="ck1" id="ck3"><s>记住我</s></label>
+						&nbsp;&nbsp;
+						<a href="#" style="color: gray;text-decoration: none;cursor: no-drop;"><s>忘记密码？</s></a>
+					</div>
+					<input type="button" value="登&nbsp;&nbsp;录" class="signin_center_a_s " onclick="adminLogin2()"/>
+					<div class="signin_center_a_r"><a class="signin_center_a_r_a" href="#">还没账号？立即注册</a></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

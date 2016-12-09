@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-单个分享</title>
+		<link rel="stylesheet" href="css/share.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		
+
+	</head>
+
+	<body onload=mainShareFunction()>
+		<div class="main" id="share_main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search" />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="share.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="share.html" class="header_a1" disabled="true"><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="#" class="header_a" id="header_ul_li_5"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="share_nav">
+				<span style="float: right;">&nbsp;&nbsp;</span>
+				<a href="#" id="share_nav_a1"></a>
+			</div>
+			<div class="share_body" >
+				<div id="share_body1">
+				
+				</div>
+				<a id="anchor_scroll" href="#share_reply_textarea1" style="display:none"></a>
+				<div class="share_reply">
+					<textarea placeholder="输入内容" spellcheck="false" class="share_reply_textarea" id="share_reply_textarea1" onkeyup="checkLen1(this)"></textarea>
+					<div class="share_reply_top">
+						<p class="share_reply_top1">
+							<span id="share_reply_top1_span">评论:</span>
+							<span id="share_reply_top1_a"></span>
+							<span id="share_reply_top1_span1">
+							还可以输入
+							<span id="share_reply_top1_count">100</span> 字
+							</span>
+							<input type="button" id="share_reply_but1" value="发布" onclick="savaComment()"/>
+						</p>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

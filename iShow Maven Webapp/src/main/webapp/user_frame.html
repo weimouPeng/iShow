@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-用户</title>
+		<link rel="stylesheet" href="css/userf.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+	</head>
+
+	<body onload=mainUserFrame()>
+		<div class="main" id="userf_main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search" />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="user_frame.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="user_frame.html" class="header_a1" disabled="true"><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="#" class="header_a" onclick="userFrameQuit()">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="userf_data">
+				<div class="userf_data_head">
+					<img src="img/user.ico" id="userf_data_head1" />
+					<span id="userf_data_name1"></span>
+				</div>
+				<div class="userf_data_but">
+					<input type="button" value="+&nbsp;关注" id="userf_data_but1" disabled="disabled" />
+				</div>
+			</div>
+			<div class="userf_menu">
+				<a id="userf_menu1" title="切换至自己的分享" href="#" onclick="switch_uf1()">自己的分享</a>
+				<a id="userf_menu2" title="切换至评论的分享" href="#" onclick="switch_uf2()">评论的分享</a>
+				<a id="userf_menu3" title="切换至点赞的分享" href="#" onclick="switch_uf3()">点赞的分享</a>
+				<a id="userf_menu4" title="切换至收藏的分享" href="#" onclick="switch_uf4()">收藏的分享</a>
+				<a id="userf_menu5" title="切换至收藏的用户" href="#" onclick="switch_uf5()">收藏的用户</a>
+			</div>
+			<div class="userf_body" id="userf_body1">
+			
+			</div>
+			<div class="userf_body2">
+				<p class="userf_body2_p" id="userf_body2_p1">
+				</p>
+				<p class="userf_body2_p2"></p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			if($(document).height() < "770") {
+				$("#userf_main").css("height", "770px");
+			}
+		</script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>

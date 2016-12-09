@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>iShow-管理设置</title>
+		<link rel="stylesheet" href="css/a_set.css" />
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+
+	</head>
+
+	<body onload=mainAdminSet()>
+		<div class="main">
+			<div class="header">
+				<div class="header_1">
+					<a href="index.jsp"><img src="img/ishow.png" class="header_logo" /></a>
+					<input type="text" maxlength="23" spellcheck="false" placeholder="大家都在搜：铃兰丶物语" class="header_input" />
+					<img src="img/search.png" onclick="searchShare()" class="header_search" />
+					<ul class="header_ul">
+						<li class="header_ul_li">
+							<a href="index.jsp" class="header_a"><img src="img/home.ico" />首页</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="a_set.html" class="header_a1" disabled="true"><img src="img/heart.ico" />点赞榜</a>
+						</li>
+						<li class="header_ul_li">
+							<a href="a_set.html" class="header_a1" disabled="true"><img src="img/new.ico">最新分享</a>
+						</li>
+						<li class="header_ul_li header_ul_li_3">
+							<a href="register.html" class="header_a">注册</a>
+						</li>
+						<li class="header_ul_li header_ul_li_2">|</li>
+						<li class="header_ul_li header_ul_li_2">
+							<a href="#" class="header_a" onclick="aSetQuit1()">退出</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="aset_body">
+				<div class="aset_top">
+					<span id="aset_top_a1"></span>
+					<div class="aset_top_img">
+						<img src="xiada/xiada1.jpg" id="aset_top_img1" />
+					</div>
+				</div>
+				<div class="aset_nav">
+					<div class="aset_nav1">
+						<a href="#" id="aset_nav_a1" title="切换至用户设置" onclick="switch_uset()">用户设置</a>
+					</div>
+					<div class="aset_nav2">
+						<a href="#" id="aset_nav_a2" title="切换至关键字设置" onclick="switch_fset()">关键字设置</a>
+					</div>
+				</div>
+				<div class="aset_change">
+					<div class="aset_menu">
+						<div class="aset_menu1">
+							<span id="aset_menu1_a1">用户ID</span>
+						</div>
+						<div class="aset_menu2">
+							<span id="aset_menu1_a2">用户昵称</span>
+						</div>
+						<div class="aset_menu3">
+							<span id="aset_menu1_a3">状态</span>
+						</div>
+					</div>
+					<div class="aset_text" id="aset_text1">
+						
+					</div>
+				</div>
+				<div class="aset_change1">
+					<div class="aset_change1_add">
+						<input type="text" id="aset_change1_add_1" maxlength="4" onkeyup="this.value=this.value.replace(/^ +| +$/g,'')" onpaste="return false" placeholder="输入关键字(4个字符内)" />
+						<input type="button" id="aset_change1_add_2" onclick="addkeyword()" value="添加" />
+					</div>
+					<div class="aset_menu_2">
+						<div class="aset_menu2_1">
+							<span id="aset_menu2_a1">关键字</span>
+						</div>
+						<div class="aset_menu2_1">
+							<span id="aset_menu2_a2">操作</span>
+						</div>
+					</div>
+					<div class="aset_text_2" id="aset_text_3">
+						
+					</div>
+
+				</div>
+				<div class="aset_bottom">
+					<input type="button" id="aset_bottom_page_1" value="首页" onclick="switch_firstPage()"/>
+					<input type="button" id="aset_bottom_page_2" value="上页" onclick="switch_prePage()"/>
+					<input type="button" id="aset_bottom_page_3" value="下页" onclick="switch_nextPage()"/>
+					<input type="button" id="aset_bottom_page_4" value="尾页" onclick="switch_lastPage()"/>
+					<span class="aset_bottom_page_span">第</span>
+					<span id="aset_bottom_page_now">1</span>
+					<span class="aset_bottom_page_span ">页</span>
+					<span class="aset_bottom_page_span ">/</span>
+					<span class="aset_bottom_page_span ">共</span>
+					<span id="aset_bottom_page_all">1</span>
+					<span class="aset_bottom_page_span ">页</span>
+					<input type="text" id="aset_bottom_page_6" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" placeholder="输入页数" />
+					<input type="button" id="aset_bottom_page_5" value="跳转" onclick="switch_Go()"/>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+
+</html>
